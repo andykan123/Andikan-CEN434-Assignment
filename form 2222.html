@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognito Signup Form</title>
+    <link rel="stylesheet" href="C:\Users\USER\Downloads\ffff.css">
+</head>
+<body>
+    <header>
+        <img src="C:\Users\USER\Downloads\images.png" alt="Cognito Logo">
+        <h1>
+            <span style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 60px;">COGNITO</span> 
+            <br><span style="text-align: center;">SIGNUP FORM</span>
+        </h1>
+    </header>
+    
+    <div class="form-container">
+        <form action="action.php" method="post">
+            <h3>FILL IN THE APPROPRIATE FIELDS</h3>
+            <div class="input-container">
+                <label for="name">NAME:</label>
+                <input type="text" name="nameid" id="name" placeholder="surname(first)">
+            </div>
+
+            <div class="input-container">
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            
+            <div class="input-container">
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" placeholder="example@email.com">
+            </div>
+
+            <div class="input-container">
+                <label for="dob">DOB:</label>
+                <input type="date" name="dob" id="dob">  
+            </div>
+            
+            <div class="input-container">
+                <label for="password">PASSWORD:</label>
+                <input type="password" name="password" id="password" required>
+                
+                <label for="confirm">CONFIRM PASSWORD:</label>
+                <input type="password" name="confirm" id="confirm" required>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="more-info">
+        <div class="info-cointainer">
+            <h3>For More Information:<br><span style="font-size: small;">Contact us at:</span><br>cognitoafrica@gmail.com</h3>
+        </div>
+    </div>
+    
+
+    <footer>
+        <h3>&copy; COGNITO AFRICA 2024</h3>
+        <h4>All Rights Reserved</h4>
+    </footer>
+</body>
+</html>
