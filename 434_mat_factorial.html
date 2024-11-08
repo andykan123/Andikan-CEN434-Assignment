@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Factorial</title>
+    </head>
+    <body>
+        <p id="fact"></p>
+        <script type="text/javascript">
+            function factorial(n) {
+                if (n === 0) {
+                  return 1; 
+                } else {
+                  return n * factorial(n - 1); 
+                }
+              }
+              const result = factorial(24);
+              console.log("Factorial of 24 is:", result);   
+              document.getElementById("fact").innerHTML="Factorial of last two digits of matric numer '21CJ029224' is:"+result;          
+        </script>
+    </body>
+</html>

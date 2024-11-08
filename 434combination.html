@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Combination</title>
+    </head>
+    <body>
+        <p id="comb"></p>
+        <script type="text/javascript">
+            function factorial(n) {
+                if (n === 0) {
+                        return 1;
+                    } else {
+                        return n * factorial(n - 1);
+                }
+            }
+      
+            function combination(x, y) {
+                if (x > y) {
+                        return factorial(x) / (factorial(y) * factorial(x - y));
+                    } else if (y > x) {
+                        return factorial(y) / (factorial(x) * factorial(y - x));
+                    } else if (x === y) {
+                        return factorial(x - 1) / (factorial(y - 1) * factorial(1));
+                    } else {
+                        return 0; 
+                    }
+            }
+      
+            const x = parseInt(prompt("Enter the value of x:"));
+            const y = parseInt(prompt("Enter the value of y:"));
+      
+            const result = combination(x, y);
+      
+            console.log(`The result is: ${result}`);
+            document.getElementById("comb").innerHTML="Combination of x and y is:"+result;
+        </script>
+    </body>
+</html>
